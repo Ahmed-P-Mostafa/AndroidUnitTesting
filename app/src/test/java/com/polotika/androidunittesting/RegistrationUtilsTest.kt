@@ -1,6 +1,7 @@
 package com.polotika.androidunittesting
 
 import com.google.common.truth.Truth.assertThat
+import com.polotika.androidunittesting.utils.RegistrationUtils
 import org.junit.Test
 
 class RegistrationUtilsTest{

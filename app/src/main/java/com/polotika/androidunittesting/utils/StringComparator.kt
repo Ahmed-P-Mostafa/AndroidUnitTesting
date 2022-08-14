@@ -1,4 +1,4 @@
-package com.polotika.androidunittesting
+package com.polotika.androidunittesting.utils
 
 import android.content.Context
 

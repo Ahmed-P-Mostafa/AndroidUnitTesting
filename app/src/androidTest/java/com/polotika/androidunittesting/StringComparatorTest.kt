@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.google.common.truth.Truth.assertThat
+import com.polotika.androidunittesting.utils.StringComparator
 
 import org.junit.Before
 import org.junit.Test
