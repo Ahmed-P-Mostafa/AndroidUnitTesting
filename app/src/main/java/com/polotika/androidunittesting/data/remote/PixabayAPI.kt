@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface PixabayAPI {
 
-    @GET("/api/")
+    @GET("api/")
     suspend fun searchForImage(
         @Query("q") searchQuery: String,
         @Query("key") apiKey: String = BuildConfig.PIXABAY_API_KEy

@@ -83,4 +83,20 @@ class ShoppingViewModelTest {
         val result = viewModel.insertShoppingItemStatus.getOrAwaitValueTest()
         assertThat(result.getContentIfNotHandled()?.status).isEqualTo(Status.SUCCESS)
     }
+
+    @Test
+    fun `set image url_affect immutable image variable`(){
+        viewModel.setCurImageUrl("abc")
+        val response = viewModel.curImageUrl.getOrAwaitValueTest()
+        assertThat(response).isEqualTo("abc")
+    }
+    @Test
+    fun `insert shopping item successfully_clears current image url`(){
+        viewModel.setCurImageUrl("abc")
+        viewModel.insertShoppingItem("name","3","3")
+        val response = viewModel.curImageUrl.getOrAwaitValueTest()
+        assertThat(response).isEmpty()
+
+
+    }
 }
